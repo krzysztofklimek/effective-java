@@ -4,7 +4,11 @@ package com.example.demo.creating.destroying.objects;
 //		The NutritionFacts class is immutable, and all parameter default values are
 //		in one place. The builder’s setter methods return the builder itself so that
 //		invocations can be chained, resulting in a fluent API. Here’s how the client code looks:
-//		NutritionFacts cocaCola = new NutritionFacts.Builder(240, 8).calories(100).sodium(35).carbohydrate(27).build();
+//		NutritionFacts cocaCola = new NutritionFacts.Builder(240, 8)
+//				.carbohydrate(27)
+//				.calories(100)
+//				.sodium(35)
+//				.build();
 public class NutritionFacts {
 	private final int servingSize;
 	private final int servings;
@@ -62,5 +66,4 @@ public class NutritionFacts {
 		sodium = builder.sodium;
 		carbohydrate = builder.carbohydrate;
 	}
-
 }
