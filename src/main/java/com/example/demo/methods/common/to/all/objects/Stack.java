@@ -1,4 +1,4 @@
-package com.example.demo.creating.destroying.objects;
+package com.example.demo.methods.common.to.all.objects;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;
