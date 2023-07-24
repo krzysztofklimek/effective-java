@@ -1,4 +1,4 @@
-package com.example.demo.methods.common.to.all.objects;
+package com.example.demo.common.to.all.objects;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;
