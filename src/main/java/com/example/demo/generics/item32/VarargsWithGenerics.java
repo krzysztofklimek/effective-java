@@ -1,4 +1,4 @@
-package com.example.demo.generics;
+package com.example.demo.generics.item32;
 
 import java.util.concurrent.ThreadLocalRandom;
 

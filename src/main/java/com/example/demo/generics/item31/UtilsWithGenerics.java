@@ -1,4 +1,4 @@
-package com.example.demo.generics;
+package com.example.demo.generics.item31;
 
 import java.util.Collection;
 import java.util.HashSet;

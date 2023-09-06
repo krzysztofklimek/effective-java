@@ -1,4 +1,4 @@
-package com.example.demo.enums.and.annotations;
+package com.example.demo.enums.and.annotations.item34;
 
 public enum PayrollDay {
 	MONDAY,

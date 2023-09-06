@@ -1,4 +1,4 @@
-package com.example.demo.creating.destroying.objects;
+package com.example.demo.creating.destroying.objects.item2;
 
 //Builder pattern
 //		The NutritionFacts class is immutable, and all parameter default values are

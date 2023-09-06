@@ -1,4 +1,6 @@
-package com.example.demo.creating.destroying.objects;
+package com.example.demo.creating.destroying.objects.item2;
+
+import java.util.Objects;
 
 //		Note that the build method in each subclass’s builder is declared to return the
 //		correct subclass: the build method of NyPizza.Builder returns NyPizza , while
@@ -6,30 +8,31 @@ package com.example.demo.creating.destroying.objects;
 //		method is declared to return a subtype of the return type declared in the superclass,
 //		is known as covariant return typing. It allows clients to use these builders
 //		without the need for casting.
-public class PizzaCalzone extends Pizza{
-	private final boolean sauceInside;
+public class PizzaNy extends Pizza {
+	public enum Size {SMALL, MEDIUM, LARGE}
 
-	public static class Builder extends Pizza.Builder<Builder>{
-		private boolean sauceInside = false; // Default
+	private final Size size;
 
-		public Builder sauceInside(){
-			this.sauceInside = true;
-			return this;
+	public static class Builder extends Pizza.Builder<Builder> {
+		private final Size size;
+
+		public Builder(Size size) {
+			this.size = Objects.requireNonNull(size);
 		}
 
 		@Override
-		public PizzaCalzone build(){
-			return new PizzaCalzone(this);
+		public PizzaNy build() {
+			return new PizzaNy(this);
 		}
 
 		@Override
-		protected Builder self(){
+		protected Builder self() {
 			return this;
 		}
 	}
 
-	public PizzaCalzone(Builder builder){
+	public PizzaNy(Builder builder) {
 		super(builder);
-		this.sauceInside = builder.sauceInside;
+		this.size = builder.size;
 	}
 }

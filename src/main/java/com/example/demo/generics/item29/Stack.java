@@ -1,4 +1,4 @@
-package com.example.demo.generics;
+package com.example.demo.generics.item29;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

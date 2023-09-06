@@ -1,4 +1,4 @@
-package com.example.demo.lambdas.and.streams;
+package com.example.demo.lambdas.and.streams.item42;
 
 import java.util.function.DoubleBinaryOperator;
 

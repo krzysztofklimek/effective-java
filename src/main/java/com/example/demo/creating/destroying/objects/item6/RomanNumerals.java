@@ -1,4 +1,4 @@
-package com.example.demo.creating.destroying.objects;
+package com.example.demo.creating.destroying.objects.item6;
 
 import java.util.regex.Pattern;
 

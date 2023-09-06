@@ -1,4 +1,4 @@
-package com.example.demo.methods;
+package com.example.demo.methods.item52;
 
 import java.math.BigInteger;
 import java.util.*;
